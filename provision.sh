@@ -66,6 +66,14 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 sudo chmod +x /usr/local/bin/composer
 
+# Install PHP switcher
+sudo mv /tmp/switch-php /usr/local/bin/switch-php
+sudo chown root.root /usr/local/bin/switch-php
+sudo chmod +x /usr/local/bin/switch-php
+
+# Ensure PHP 7.2 is set as default PHP version
+sudo switch-php 7.2
+
 # Generate locales (en_US, en_GB, nl_BE and nl_NL)
 sudo locale-gen --purge en_US.UTF-8
 sudo locale-gen en_US
