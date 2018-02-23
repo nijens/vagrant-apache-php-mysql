@@ -1,0 +1,37 @@
+# ======================== Elasticsearch Configuration =========================
+#
+# NOTE: Elasticsearch comes with reasonable defaults for most settings.
+#       Before you set out to tweak and tune the configuration, make sure you
+#       understand what are you trying to accomplish and the consequences.
+#
+# The primary way of configuring a node is via this file. This template lists
+# the most important settings you may want to configure for a production cluster.
+#
+# Please see the documentation for further information on configuration options:
+# <http://www.elastic.co/guide/en/elasticsearch/reference/current/setup-configuration.html>
+#
+# ---------------------------------- Cluster -----------------------------------
+cluster.name: development
+
+# ------------------------------------ Node ------------------------------------
+node.name: ${HOSTNAME}
+node.master: true
+node.data: true
+
+# ----------------------------------- Memory -----------------------------------
+#
+# Lock the memory on startup:
+#
+#bootstrap.mlockall: true
+
+# ---------------------------------- Network -----------------------------------
+#
+# Set the bind address to a specific IP (IPv4 or IPv6):
+#
+network.host: ["_local_"]
+
+# --------------------------------- Discovery ----------------------------------
+discovery.zen.minimum_master_nodes: 1
+
+# ---------------------------------- Various -----------------------------------
+script.disable_dynamic_scripts: true
