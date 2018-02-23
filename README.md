@@ -39,7 +39,7 @@ Vagrant.configure("2") do |config|
     
     config.vm.provision "shell", 
         path: "https://raw.githubusercontent.com/nijens/vagrant-apache-php-mysql/master/provision/elasticsearch.sh", 
-        sha1: 62c62971d8bea9c9e5e2bd444cd433804f7b79c8,
+        sha1: 5504b8c4a2d0eac994f98ca6b963d8a24228b83e,
         args: ["2"]
     
     # ...
