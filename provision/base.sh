@@ -15,7 +15,7 @@ sudo service apache2 restart
 # Install MySQL
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server
 
-# Install PHP 5.6, 7.0, 7.1 and 7.2
+# Install PHP 5.6, 7.0, 7.1, 7.2 and 7.3
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
                                             libapache2-mod-php5.6 \
                                             php5.6 \
@@ -35,9 +35,8 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
                                             php7.0 \
                                             php7.1 \
                                             php7.2 \
-                                            libapache2-mod-php7.0 \
-                                            libapache2-mod-php7.1 \
-                                            libapache2-mod-php7.2 \
+                                            php7.3 \
+                                            libapache2-mod-php7.* \
                                             php7.*-curl \
                                             php7.*-gd \
                                             php7.*-imap \
