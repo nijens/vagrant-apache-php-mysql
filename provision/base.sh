@@ -4,6 +4,9 @@
 echo '' | sudo add-apt-repository ppa:ondrej/php
 sudo DEBIAN_FRONTEND=noninteractive apt-get update
 
+# Remove unattended upgrades
+sudo DEBIAN_FRONTEND=noninteractive apt-get purge -y unattended-upgrades
+
 # Install common packages
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y imagemagick gettext subversion git
 
