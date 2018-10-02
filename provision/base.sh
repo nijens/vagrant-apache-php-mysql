@@ -8,7 +8,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get purge -y unattended-upgrades
 
 # Install common packages
-sudo DEBIAN_FRONTEND=noninteractive apt-get install -y imagemagick gettext subversion git
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y imagemagick gettext subversion git unzip
 
 # Install Apache
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y apache2 libapache2-mpm-itk
